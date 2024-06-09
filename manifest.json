@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Wedone Web Apps Launcher",
+    "version": "1.0.0.21",
+    "description": "Le Wedone Web Apps Launcher permet de lancer les Wedone Web Apps d'une manière simple et intuitive.",
+    "permissions": ["storage"],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon16.png",
+            "48": "icon48.png",
+            "128": "icon128.png"
+        }
+    },
+    "icons": {
+        "48": "icon48.png",
+        "96": "icon96.png"
+    }
+}

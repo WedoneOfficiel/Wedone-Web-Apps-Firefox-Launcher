@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedone Web Apps Launcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Wedone Web Apps</h2>
+        <div class="category">
+            <div class="button-container">
+                <button class="web-app todo" id="todo">
+                    <img src="logo-todo.png" alt="Logo To Do List" class="button-logo">
+                    Wedone To Do List
+                </button>
+                <button class="web-app qr" id="qr">
+                    <img src="logo-qr-hover.png" alt="Logo QR Code" class="button-logo" id="qr-logo">
+                    Wedone QR Code
+                </button>
+                <button id="settings">Paramètres</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal pour les paramètres -->
+    <div id="settingsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close">&times;</span>
+            <h2>Paramètres</h2>
+            <div class="settings-container">
+                <label class="custom-checkbox">
+                    <input type="checkbox" id="enableIntro">
+                    Activer la page de présentation des services
+                    <span class="checkmark"></span>
+                </label>
+                <label class="custom-checkbox">
+                    <input type="checkbox" id="closeExtension">
+                    Fermer l'extension après le lancement d'une application
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
